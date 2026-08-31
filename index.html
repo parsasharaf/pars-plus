@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#050605">
+  <meta name="description" content="PARS PLUS — راهنمای اجرای صحیح پرس پا">
+  <title>PARS PLUS | پرس پا</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site-shell">
+
+  <header class="brandbar">
+    <div class="brand">
+      <div class="brand-name">PARS PLUS</div>
+      <div class="brand-sub">PERFORMANCE CLUB</div>
+    </div>
+    <div class="brand-mark">P</div>
+  </header>
+
+  <main id="app">
+    <!-- HOME -->
+    <section id="home" class="page active-page">
+      <article class="hero">
+        <div class="hero-machine">
+          <div class="laser l1"></div><div class="laser l2"></div>
+          <svg viewBox="0 0 520 470" aria-label="دستگاه پرس پا">
+            <defs>
+              <linearGradient id="steel" x1="0" x2="1">
+                <stop offset="0" stop-color="#080909"/><stop offset=".48" stop-color="#565b57"/><stop offset=".53" stop-color="#171a18"/><stop offset="1" stop-color="#060706"/>
+              </linearGradient>
+              <linearGradient id="seat" x1="0" x2="0" y1="0" y2="1">
+                <stop stop-color="#252a27"/><stop offset="1" stop-color="#090a09"/>
+              </linearGradient>
+              <filter id="glow"><feGaussianBlur stdDeviation="3"/></filter>
+            </defs>
+            <ellipse cx="260" cy="435" rx="220" ry="14" fill="#000" opacity=".8"/>
+            <path d="M80 425L125 105h35l-30 320M440 425L395 105h-35l30 320" fill="none" stroke="url(#steel)" stroke-width="30"/>
+            <path d="M120 110H400" stroke="#666b66" stroke-width="14" stroke-linecap="round"/>
+            <path d="M145 135H375" stroke="#0a0b0a" stroke-width="48" stroke-linecap="round"/>
+            <path d="M150 151H370" stroke="#727771" stroke-width="7"/>
+            <path d="M150 178H370" stroke="#111311" stroke-width="25"/>
+            <path d="M168 188L351 188L416 356L104 356Z" fill="url(#seat)" stroke="#414641" stroke-width="8"/>
+            <path d="M180 208L339 208L381 330L139 330Z" fill="#090a09"/>
+            <path d="M190 95H330" stroke="#a0a49f" stroke-width="9" stroke-linecap="round"/>
+            <g fill="#686d68">
+              <circle cx="83" cy="160" r="24"/><circle cx="437" cy="160" r="24"/>
+              <circle cx="83" cy="210" r="18"/><circle cx="437" cy="210" r="18"/>
+            </g>
+            <g fill="#090a09">
+              <circle cx="83" cy="160" r="9"/><circle cx="437" cy="160" r="9"/>
+            </g>
+            <path d="M75 260L112 260M408 260L445 260" stroke="#9ad94e" stroke-width="7" stroke-linecap="round"/>
+            <path d="M75 270L115 270M405 270L445 270" stroke="#383c38" stroke-width="7"/>
+          </svg>
+        </div>
+        <div class="hero-copy">
+          <div class="hero-kicker">PARS PLUS</div>
+          <h1>LEG PRESS</h1>
+          <h2>پرس پا</h2>
+          <p>راهنمای حرکت قابل اجرا با دستگاه پرس پا</p>
+        </div>
+      </article>
+
+      <section class="exercise-picker">
+        <div class="section-meta"><span>EXERCISES</span><em>۳ حرکت</em></div>
+        <h2>حرکت مورد نظرت رو انتخاب کن</h2>
+
+        <button class="exercise-card" data-open="standard">
+          <span class="arrow">←</span>
+          <span class="card-text"><b>LEG PRESS</b><strong>پرس پا استاندارد</strong><small>چهارسر ران · سرینی · همسترینگ</small></span>
+        </button>
+        <button class="exercise-card" data-open="wide">
+          <span class="arrow">←</span>
+          <span class="card-text"><b>WIDE STANCE</b><strong>پرس پا با جای پا باز</strong><small>سرینی · داخل ران · چهارسر</small></span>
+        </button>
+        <button class="exercise-card" data-open="narrow">
+          <span class="arrow">←</span>
+          <span class="card-text"><b>NARROW STANCE</b><strong>پرس پا با جای پا جمع</strong><small>چهارسر ران · کنترل حرکت</small></span>
+        </button>
+      </section>
+    </section>
+
+    <!-- DETAIL -->
+    <section id="detail" class="page">
+      <button class="back" id="backBtn">← <span>حرکات</span></button>
+      <div class="detail-head">
+        <div class="detail-kicker">LEG PRESS</div>
+        <h1 id="detailTitle">پرس پا</h1>
+        <p>راهنمای اجرای صحیح</p>
+      </div>
+
+      <div class="video-card" id="video">
+        <div class="video-stage">
+          <div class="video-badge"><span class="dot"></span> پخش می‌شود</div>
+          <button class="video-icon expand" aria-label="تمام صفحه">↗</button>
+          <button class="video-icon picture" aria-label="تصویر در تصویر">▣</button>
+          <div class="legpress-animation">
+            <div class="machine-frame"></div>
+            <div class="rail rail-a"></div><div class="rail rail-b"></div>
+            <div class="plate-stack"><i></i><i></i><i></i></div>
+            <div class="sled"></div>
+            <div class="person">
+              <div class="head"></div><div class="torso"></div>
+              <div class="thigh"></div><div class="shin"></div>
+              <div class="foot"></div>
+            </div>
+          </div>
+          <div class="shade"></div>
+          <button class="skip skip-back" aria-label="۱۰ ثانیه قبل">↶<b>10</b></button>
+          <button class="play" id="playBtn" aria-label="پخش/توقف"><span>Ⅱ</span></button>
+          <button class="skip skip-forward" aria-label="۱۰ ثانیه جلو">↷<b>10</b></button>
+          <div class="video-controls">
+            <span id="current">0:00</span>
+            <div class="progress"><i id="progress"></i></div>
+            <span id="remain">-0:20</span>
+            <button class="more" aria-label="بیشتر">•••</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="panel anatomy-panel">
+        <div class="section-meta"><span>ANATOMY</span></div>
+        <h2>عضلات هدف</h2>
+        <div class="muscle-tabs">
+          <button class="selected" data-muscle="quad">چهارسر ران</button>
+          <button data-muscle="glute">سرینی</button>
+          <button data-muscle="ham">همسترینگ</button>
+        </div>
+        <div class="body-diagram">
+          <svg viewBox="0 0 320 390">
+            <circle cx="160" cy="43" r="25" fill="#9b9f9a"/>
+            <path d="M130 78Q160 64 190 78L205 178L187 208L193 295L166 345L145 295L132 208L115 178Z" fill="#424742"/>
+            <path d="M120 93L72 150L98 166L138 126M200 93L248 150L222 166L182 126" fill="none" stroke="#414641" stroke-width="26" stroke-linecap="round"/>
+            <path id="quadGlow" d="M137 178L111 273L141 286L160 213L179 286L209 273L183 178" fill="none" stroke="#86ef2d" stroke-width="28" stroke-linecap="round"/>
+            <path id="gluteGlow" d="M133 176Q160 197 187 176L187 220Q160 241 133 220Z" fill="none" stroke="#86ef2d" stroke-width="24" opacity="0"/>
+            <path id="hamGlow" d="M140 228L127 292M180 228L193 292" stroke="#86ef2d" stroke-width="24" stroke-linecap="round" opacity="0"/>
+            <path d="M146 294L130 360M174 294L190 360" stroke="#6b706b" stroke-width="20" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-meta"><span>HOW TO</span></div>
+        <h2>نحوه اجرای صحیح</h2>
+        <ol class="steps">
+          <li><b>۱</b><span>صندلی را طوری تنظیم کن که کمر و لگن کاملاً به پشتی تکیه داشته باشند.</span></li>
+          <li><b>۲</b><span>پاها را تقریباً به اندازه عرض شانه روی صفحه قرار بده و پنجه‌ها را کمی رو به بیرون بگیر.</span></li>
+          <li><b>۳</b><span>وزنه را آزاد کن و زانوها را بدون قفل‌کردن در وضعیت شروع نگه دار.</span></li>
+          <li><b>۴</b><span>صفحه را با فشار پاشنه و میانه پا به جلو بران؛ زانوها در راستای پنجه‌ها حرکت کنند.</span></li>
+          <li><b>۵</b><span>در پایین‌ترین نقطه‌ای که لگن از پشتی جدا نمی‌شود مکث کوتاه کن و کنترل‌شده برگرد.</span></li>
+        </ol>
+      </section>
+
+      <section class="panel tips">
+        <div class="section-meta"><span>TIPS</span></div>
+        <h2>نکات مهم</h2>
+        <ul>
+          <li>آرنج‌ها و دست‌ها را برای فشار دادن وزنه درگیر نکن.</li>
+          <li>وزنه‌ای انتخاب کن که بتوانی دامنه حرکت و سرعت را در تمام تکرارها کنترل کنی.</li>
+          <li>برای جابه‌جایی وزنه از تاب دادن بدن یا ضربه زدن استفاده نکن.</li>
+        </ul>
+      </section>
+
+      <section class="panel mistakes">
+        <div class="section-meta"><span>COMMON MISTAKES</span></div>
+        <h2>اشتباهات رایج</h2>
+        <ul>
+          <li>باز و بسته کردن مداوم آرنج برای جابه‌جایی وزنه</li>
+          <li>تاب دادن بدن برای ایجاد تکانه</li>
+          <li>رها کردن سریع وزنه در بخش برگشت</li>
+          <li>استفاده از وزنه‌ای که باعث از دست رفتن کنترل حرکت شود</li>
+          <li>جلو کشیدن یا بالا انداختن شانه‌ها در پایان حرکت</li>
+        </ul>
+      </section>
+
+      <section class="panel safety">
+        <div class="section-meta">SAFETY</div>
+        <h2>هشدار</h2>
+        <ul><li>در صورت درد تیز، شدید یا غیرعادی در زانو، لگن یا کمر، حرکت را متوقف کن.</li></ul>
+      </section>
+
+      <footer>PARS PLUS <span>•</span> Digital Gym Guide</footer>
+    </section>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
